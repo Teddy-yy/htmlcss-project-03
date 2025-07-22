@@ -51,6 +51,22 @@ a{
     cursor: pointer;
 }
 
+.section-heading{
+    color: #10375C;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.section-desc{
+    margin-top: 18px;
+    color: #575F66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67; /* 166.667% */
+}
+
 /* Header */
 .header{
     min-height: 100vh;
@@ -223,4 +239,90 @@ a{
 .hero__img:last-child{
     width: 210px;
     height: 410px;
+}
+
+/* Service */
+.service{
+    padding: 170px 0;
+}
+
+.service__heading,
+.service__desc{
+    text-align: center;
+}
+
+.service__desc{
+    margin-left: auto;
+    margin-right: auto;
+    width: 468px;
+}
+
+.service__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.service__img{
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.service__list{
+    margin-bottom: 55px;
+}
+
+.service_item{
+    display: flex;
+    padding: 22px;
+    background: #FFF;
+    width: 470px;
+    border-radius: 10px;
+    transition: .25s;
+}
+
+.service_item:hover{
+    position: relative;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service_item:hover .service-item__icon{
+    background: #10375C;
+    color: #FFF;
+}
+
+.service-item__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #EFF6FD;
+    color: #10375C;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    transition: .25s;
+}
+
+.service-item__body{
+    margin-left: 20px;
+}
+
+.service-item__heading{
+    color: #10375C;
+    font-size: 1.8rem;
+    line-height: 1.27;
+    font-weight: 600;
+}
+
+.service-item__desc{
+    margin-top: 8px;
+    color: #575F66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
 }
